@@ -1,0 +1,11 @@
+class
+{
+	public static void main(string[] args)
+	{
+		A obj= new A();
+		obj.set(5);
+		system.out.println(get (5));
+	}
+	
+	
+}

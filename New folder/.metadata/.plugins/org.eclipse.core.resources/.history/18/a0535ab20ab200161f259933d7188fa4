@@ -1,0 +1,13 @@
+package forloop;
+
+public class ForLOOP {
+
+	public static void main(String[] args) {
+		for(int i=100; i>2; i--){
+			System.out.println(i);
+		}
+		
+
+	}
+
+}
