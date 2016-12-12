@@ -1,24 +1,42 @@
 package com.niit.parthi;
-import java.util.Scanner;
-public class PurchaseAverage {
-	public static void main(String[] args){
-		String name,product;
-		int quantity,prize;
-		Scanner s=new Scanner (System.in);
-		System.out.println("enter your name");
-		
+
+import java.util.*;
+class avg
+{
+	float salary,spent,cost,avg,remaining;
+	int quantity;
+	String name;
+	
+	Scanner s= new Scanner(System.in);
+	void input()
+	{
+		System.out.println("enter the salary");
+		salary=s.nextInt();
+	}
+	void compute()
+	{
+		System.out.println("enter the name of product");
 		name=s.next();
-		System.out.println("enter your product");
-		product=s.next();
-		System.out.println("enter your quntity");
+		System.out.println("enter the num of products");
 		quantity=s.nextInt();
-		System.out.println("enter your prize");
-		prize=s.nextInt();
-		
-		
-		
+		System.out.println("enter the cost of products");
+		cost=s.nextFloat();
+		spent=cost*quantity;
+		remaining=salary-spent;
+		avg=(spent/salary)*100;
+		System.out.println("name of the product "+name);
+		System.out.println("remaining amount "+remaining);
+		System.out.println("average of the spent "+avg);
 		
 	}
 	
-
+}
+class PurchaseAverage
+{
+	public static void main(String [] args)
+	{
+		avg a = new avg();
+		a.input();
+		a.compute();
+	}
 }

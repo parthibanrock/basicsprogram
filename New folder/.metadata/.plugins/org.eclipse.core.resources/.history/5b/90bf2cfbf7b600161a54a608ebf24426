@@ -1,0 +1,42 @@
+package com.niit.parthi;
+
+import java.util.*;
+class avg
+{
+	float salary,spent,total,c,avg;
+	int q;
+	String name;
+	
+	Scanner s= new Scanner(System.in);
+	void input()
+	{
+		System.out.println("enter the salary");
+		salary=s.nextInt();
+	}
+	void compute()
+	{
+		System.out.println("enter the name of product");
+		name=s.next();
+		System.out.println("enter the num of products");
+		q=s.nextInt();
+		System.out.println("enter the cost of products");
+		c=s.nextFloat();
+		total=c*q;
+		spent=salary-total;
+		avg=total/salary;
+		System.out.println("name of the product"+name);
+		System.out.println("remaining"+spent);
+		System.out.println("average of the spent "+avg);
+		
+	}
+	
+}
+class call
+{
+	public static void main(String [] args)
+	{
+		avg a = new avg();
+		a.input();
+		a.compute();
+	}
+}

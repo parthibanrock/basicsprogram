@@ -1,0 +1,8 @@
+package com.niit.parthi;
+import java.util.Scanner;
+public class PurchaseAverage {
+	public static void main(String[] args){
+		
+			
+		}
+}

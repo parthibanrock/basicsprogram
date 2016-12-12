@@ -1,0 +1,33 @@
+package com.niit.parthi;
+import java.util.Scanner;
+public class PurchaseAverage {
+	public static void main(String[] args){
+		String name,product;
+		int no,quantity,prize,star,salary;
+		Scanner s=new Scanner (System.in);
+		System.out.println("enter your name");
+		
+		name=s.next();
+		System.out.println("enter your product");
+		product=s.next();
+		System.out.println("Enter the number  of the products");
+		no=s.nextInt();
+		for(int i=1;i<=no;i++)
+		{
+		
+		}
+		System.out.println("enter your price");
+		prize=s.nextInt();
+		System.out.println("enter your salary");
+		salary=s.nextInt();
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}
